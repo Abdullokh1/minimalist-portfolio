@@ -5,13 +5,109 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Minimalist</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+  <section id="hero" class="hero">
+    <header class="site-header header">
+      <div class="container">
+        <div class="row middle-xs between-xs">
+          <div>
+            <a class="header__logo" href="#"><img src="images/main-logo.svg" alt="main-logo" width="60" height="32"></a>
+          </div>
+          <nav>
+            <ul class="header__list nav row" id="hideList">
+              <li class="nav__item"><a class="nav__link nav__link--active" href="#">HOME</a></li>
+              <li class="nav__item"><a class="nav__link" href="portfolio.html">PORTFOLIO</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">CONTACT ME</a></li>
+            </ul>
+          </nav>
+          <button class="header__btn" id="burgerBtn"><i class='bx bx-menu' id="burger"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container second-container">
+      <div class="hero-content ">
+        <div class="hero-content__inner col-lg-5 col-md-8 col-sm-8">
+          <h1 class="hero-content__title">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+          <a class="hero-content__link" href="#"><i class='bx bx-chevrons-down'></i> <span class="about__text">ABOUT ME</span> </a>
+        </div>
+        <img class="mobile-img" src="images/mobile-img.png" alt="mobile-img">
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container third-container">
+      <div class="row">
+        <div class="col-lg-7 col-sm-8 col-md-7 col-xs-12">
+          <img class="about__img" src="images/about-img.png" alt="about">
+        </div>
+        <div class="col-lg-5 col-sm-4 col-md-4">
+          <span class="about__span"></span>
+          <h3 class="about__title">About Me</h3>
+          <p class="about__desc">I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
+          <a class="about__link" href="#">GO TO PORTFOLIO</a>
+          <span class="about__span about__span--second"></span>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container container-four">
+      <div class="row middle-xs contact__inner">
+
+        <div class="col-lg-4  col-sm-4 col-md-4">
+          <h4 class="contact__title">Interested in doing a project together?</h4>
+        </div>
+
+        <div class="col-lg-5 col-sm-5 col-md-5">
+          <span class="about__span about__span--second about__span--third"></span>
+        </div>
+
+        <div class="col-lg-3 col-sm-3 col-md-3">
+          <a class="about__link about__link--second" href="#">CONTACT ME</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="footer-part">
+    <div class="container">
+       <div class="footer-part__inner row middle-xs">
+          <a class="footer-part__logo" href="#"><img src="images/foot-logo.svg" alt="footer-logo"></a>
+          <nav class="footer-part__nav">
+            <ul class="footer-list foot-nav row ">
+              <li class="foot-nav__item"><a class="foot-nav__link" href="#">HOME</a></li>
+              <li class="foot-nav__item"><a class="foot-nav__link" href="#">PORTFOLIO</a></li>
+              <li class="foot-nav__item"><a class="foot-nav__link" href="#">CONTACT ME</a></li>
+            </ul>
+           </nav>
+           <ul class="social row">
+             <li class="social__item"><a href="#"><i class='bx footer-part__icon bxl-github'></i></a></li>
+             <li class="social__item"><a href="#"><i class='bx footer-part__icon bxl-twitter'></i></a></li>
+             <li class="social__item"><a href="#"><i class='bx footer-part__icon bxl-linkedin-square'></i></a></li>
+           </ul>
+       </div>
+    </div>
+
+  </footer>
+
+    
+  
 
   <script src="js/main.js"></script>
 </body>
